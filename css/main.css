@@ -17,28 +17,27 @@ html {
   box-sizing: inherit;
 }
 
-@media only screen and (min-width: 25em) {
+@media only screen and (min-width:25em) {
 
   body:nth-child(odd) {
-  display: none;
+    display: none;
 }
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width:38em) {
 
-  img {
-  display: inline-block;
+  body:nth-child(odd) {
+    display: inline-block;
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width:60em) {
 
-  img {
-  display: block;
+  body:nth-child(odd) {
+    display: block;
 }
 
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width:90em) {
 
-  img {
+  body:nth-child(odd) {
     display: block;
   }
-
 }
