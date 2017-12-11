@@ -17,54 +17,140 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  display: inline-block;
+}
+
 img:nth-child(1) {
-  width: 50%;
+  width: 100%;
+  display: inline-block;
 }
 
 img:nth-child(4) {
-display: none;
+  display: none;
 }
 
 img:nth-child(2) {
-display: none;
+  display: none;
 }
 
 img:nth-child(3) {
-width: 50%;
+  width: 100%;
 }
-@media only screen and (min-width:25em) {
-  img:last-child {
+
+@media only screen and (min-width: 25em) {
+
+  img {
     display: inline-block;
-    width: 25%;
+  }
+
+  img:nth-child(1) {
+    float: left;
+    width: 50%;
+  }
+
+  img:nth-child(3) {
+    float: left;
+    width: 50%;
   }
 
   img:nth-child(2) {
-    display: inline-block;
-    width: 25%;
+    display: inline;
+    float: left;
+    width: 50%;
   }
 
-@media only screen and (min-width:38em) {
+  img:nth-child(4) {
+    display: inline;
+    float: left;
+    width: 50%;
+  }
+}
 
-  img:last-child {
+@media only screen and (min-width: 38em) {
+
+  img {
     display: inline-block;
-    width: 25%;
   }
 
   img:nth-child(2) {
-    display: inline-block;
-    width: 25%;
+    float: left;
+    width: 33%;
   }
 
-@media only screen and (min-width:60em) {
+  img:nth-child(4) {
+    float: right;
+    width: 33%;
+  }
 
-  img:first-child {
+  img:nth-child(3) {
+    width: 33%;
+  }
+
+  img:nth-child(1) {
     display: none;
   }
 }
 
-@media only screen and (min-width:90em) {
+@media only screen and (min-width: 60em) {
 
-  body:nth-child(odd) {
-    display: block;
+  img {
+    display: inline-block;
+  }
+
+  img:nth-child(2) {
+    float: left;
+    width: 25%;
+  }
+
+  img:nth-child(4) {
+    float: right;
+    width: 25%;
+  }
+
+  img:nth-child(3) {
+    width: 25%;
+  }
+
+  img:nth-child(1) {
+    display: inline;
+    float: left;
+    width: 25%;
+  }
+
+  body {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+
+  img {
+    display: inline-block;
+  }
+
+  img:nth-child(2) {
+    float: left;
+    width: 25%;
+  }
+
+  img:nth-child(4) {
+    float: right;
+    width: 25%;
+  }
+
+  img:nth-child(3) {
+    width: 25%;
+  }
+
+  img:nth-child(1) {
+    float: left;
+    width: 25%;
+  }
+
+  body {
+    margin-left: 2em;
+    margin-right: 2em;
   }
 }
